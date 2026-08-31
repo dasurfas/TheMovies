@@ -11,8 +11,12 @@ namespace TheMovies.Core.Models
         private string _instruktør;
         private DateTime _premiereDato;
 
-        // Konstruktoer:
-        public Film(string titel, string genre, int varighed, string instruktør, DateTime premiereDato)
+        // Konstruktør
+        // OBS: Hvis instruktør og premiereDato ikke er angivet, vil de blive sat til tom streng og default(DateTime) henholdsvis.
+        // Dette giver mulighed for at oprette en Film uden at skulle angive disse værdier.
+        // Dette er for at imødekomme Scenarie 1, hvor instruktør og premiereDato ikke er nødvendige.
+        // De bliver dog nødvendige i næste scenarie.
+        public Film(string titel, string genre, int varighed, string instruktør = "", DateTime premiereDato = default)
         {
             _titel = titel;
             _genre = genre;
