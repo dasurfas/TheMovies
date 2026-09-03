@@ -1,5 +1,5 @@
 ﻿using System.Windows;
-
+using TheMovies.UI.ViewModels;
 
 namespace TheMovies.UI.Views
 {
@@ -11,6 +11,7 @@ namespace TheMovies.UI.Views
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new MainWindowViewModel();
         }
     }
 }

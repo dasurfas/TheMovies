@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="TheMovies.Core/TheMovies.Core.csproj" />
+  <Project Path="TheMovies.Tests/TheMovies.Tests.csproj" Id="db9de8a5-50df-4f7b-8b95-3fdc0f1a47dd" />
   <Project Path="TheMovies.UI/TheMovies.UI.csproj" />
 </Solution>
